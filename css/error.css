@@ -16,15 +16,24 @@ a {text-decoration: none; color:white;}
 @keyframes disco {
   0% { transform: translateY(0%); animation-play-state: paused;}
   10% { transform: translateY(0%); }
-  50% { transform: translateY(310%);   }
-  80% { transform: translateY(310%); animation-play-state: paused;}
+  50% { transform: translateY(250%);   }
+  80% { transform: translateY(250%); animation-play-state: paused;}
   90% { filter: opacity(1); }
-  100% { transform: translateY(310%); animation-play-state: paused; filter: opacity(0); }
+  100% { transform: translateY(250%); animation-play-state: paused; filter: opacity(0); }
+}
+
+@keyframes sombra {
+  0% { filter: opacity(0) blur(10px);}
+  90% { filter: opacity(1); }
+  100% { filter: opacity(1) blur(10px);; }
 }
 
 .e404 {position: relative; width: 55%; left: 22%; }
 #disco  {position: absolute; width: 55%; left: 22%; top: -20px;
     animation-name: disco; animation-duration: 11300ms; animation-iteration-count:infinite;  animation-timing-function: ease-in-out;}
+    #disco img {width: 100%;}
+.sombra { position: absolute; bottom: 20px; width:150px; height: 10px; border-radius: 50%; background: black; opacity: 0.3;
+    animation-name: sombra; animation-duration: 11300ms; animation-iteration-count:infinite; }
 
 #x4 {width: 100%;}
 
