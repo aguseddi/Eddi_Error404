@@ -16,10 +16,10 @@ a {text-decoration: none; color:white;}
 @keyframes disco {
   0% { transform: translateY(0%); animation-play-state: paused;}
   10% { transform: translateY(0%); }
-  50% { transform: translateY(250%);   }
-  80% { transform: translateY(250%); animation-play-state: paused;}
+  50% { transform: translateY(280%);   }
+  80% { transform: translateY(280%); animation-play-state: paused;}
   90% { filter: opacity(1); }
-  100% { transform: translateY(250%); animation-play-state: paused; filter: opacity(0); }
+  100% { transform: translateY(280%); animation-play-state: paused; filter: opacity(0); }
 }
 
 @keyframes sombra {
