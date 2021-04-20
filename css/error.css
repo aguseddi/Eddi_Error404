@@ -1,0 +1,29 @@
+* { margin: 0; padding: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+body { background-color:#dbcfb2; color:white; font-family: 'Source Sans Pro', sans-serif; font-size:28px; text-align: center; line-height: 70px; }
+
+#gif { width: 35%; position: absolute; top: 200px; left: 120px; border: 25px solid #aa895e;}
+#inicio {width: 10%; position: absolute; top: 73%; left: 21%;  font-size: small; line-height: 45px; background-color: #aa895e;}
+
+.logo {position: absolute;} 
+    #logoimg { height: 300px; padding: 10px; padding-left: 20px;} 
+.logo:hover {filter: brightness(0.2);}
+
+.contenedor {width: 42%; position: absolute; left: 51%; top: 120px;}
+
+@keyframes disco {
+  0% { transform: translateY(0%); animation-play-state: paused;}
+  10% { transform: translateY(0%); }
+  50% { transform: translateY(310%);   }
+  80% { transform: translateY(310%); animation-play-state: paused;}
+  90% { filter: opacity(1); }
+  100% { transform: translateY(310%); animation-play-state: paused; filter: opacity(0); }
+}
+
+.e404 {position: relative; width: 55%; left: 22%; }
+#disco  {position: absolute; width: 55%; left: 22%; top: -20px;
+    animation-name: disco; animation-duration: 11300ms; animation-iteration-count:infinite;  animation-timing-function: ease-in-out;}
+
+#x4 {width: 100%;}
+
